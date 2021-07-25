@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Подбор программы</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body class="page__body">
+  <header class="page-header container">
+    <a href="" class="page-header__logo">
+      <img src="img/logo-mobile.png" width="34" height="38" alt="Кэт энерджи">
+    </a>
+    <img src="img/site-logo.svg" width="101" height="18" alt="cat energy">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current"><a href="index.html">Главная</a></li>
+      </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+      </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main container">
+    <h1 class="page__title">Подбор программы</h1>
+    <p class="page__text">Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <div class="filter__inner">
+        <fieldset class="filter__list filter-field">
+          <ul class="filter__item">
+            <label for="animal">имя:*</label>
+            <input class="filter-input" type="text" id="animal" placeholder="барсик">
+          </ul>
+          <ul class="filter__item">
+            <label for="weight">вес(кг):*</label>
+            <input class="filter-input" type="text" id="weight" placeholder="7">
+          </ul>
+          <ul class="filter__item">
+            <label for="age">возраст:*</label>
+            <input class="filter-input" type="text" id="age" placeholder="7">
+          </ul>
+        </fieldset>
+        <fieldset class="filter__list filter-field">
+          <ul class="filter-list">
+            <li class="filter__item">
+              <input class="filter-input" type="radio" name="r1" value="slim" id="slim" checked>
+              <label class="custom-radio" for="slim">похудение</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter-input" type="radio" name="r1" value="fat" id="fat">
+              <label class="custom-radio" for="fat">Набор массы</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter-input" type="radio" name="r1" value="unknown" id="unknown">
+              <label class="custom-radio" for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <fieldset class="filter__contact">
+        <legend>Контактные данные (владельца кота)</legend>
+        <div class="form-email">
+          <label for="email">E-mail:*</Label>
+          <input class="user-email" id="email" type="email" name="email" placeholder="кuklachev@gmail.com">
+        </div>
+        <div class="form-phone">
+          <label for="phone">Телефон:*</Label>
+          <input class="user-phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        </div>
+      </fieldset>
+      <p class="filter__message">
+        <label for="user-message">Комментарий</label><br>
+        <textarea class="user-message" id="user-message" name="text"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </p>
+      <fieldset class="filter__checkbox">
+        <legend>Дополнительно</legend>
+        <ul class="checkbox-list">
+          <li class="checkbox-list__item">
+            <input class="filter-input" type="checkbox" name="filter-1" id="sweetener" checked>
+            <label class="custom-check" for="sweetener">сахарозаменитель</label>
+          </li>
+          <li class="checkbox-list__item">
+            <input class="filter-input" type="checkbox" name="filter-1" id="water">
+            <label class="custom-check" for="water">питьевая вода</label>
+          </li>
+          <li class="checkbox-list__item">
+            <input class="filter-input" type="checkbox" name="filter-1" id="milk">
+            <label class="custom-check" for="milk">молоко</label>
+          </li>
+          <li class="checkbox-list__item">
+            <input class="filter-input" type="checkbox" name="filter-1" id="vitamins">
+            <label class="custom-check" for="vitamins">витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button button--form" type="submit">отправить заявку</button>
+      <span>* — Обязательные поля</span>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-map">
+      <div class="container">
+        <div class="contact-block">
+          <p class="contact-block__invite">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contact-block__address">
+            <p>ул. Большая
+              Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social container">
+      <img src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      <ul class="footer-social__list">
+        <li class="footer-social__icon">
+          <a href="#"><img src="img/social-icon/vkontakte.svg" width="30" height="22" alt="ВКонтакте"></a>
+        </li>
+        <li class="footer-social__icon">
+          <a href="#"><img src="img/social-icon/instagram.svg" width="23" height="23" alt="Инстаграмм"></a>
+        </li>
+        <li class="footer-social__icon">
+          <a href="#"><img src="img/social-icon/facebook.svg" width="28" height="32" alt="Фейсбук"></a>
+        </li>
+      </ul>
+      <div class="product-by">
+        <div class="product-by__text">HTML Academy</div>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
