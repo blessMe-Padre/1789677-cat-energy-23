@@ -1,0 +1,38 @@
+.page-header {
+
+  // .page-header__logo
+
+  &__logo {
+  }
+}
+
+.main-nav {
+  // .main-nav__toggle
+
+  &__toggle {
+  }
+
+  // .main-nav__list
+  &__list {
+  }
+}
+
+.site-list {
+  padding: 0;
+  list-style: none;
+  // .site-list__item
+
+  &__item {
+  font-style: normal;
+  color: $basic_black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  }
+
+  // .site-list__item--current
+
+  &__item--current {
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+  padding: 14px 26px;
+  background-color: $basic_green;
+  color: $basic_white;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+
+.button--product {
+
+}
+
+.button--show-all {
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+}
+

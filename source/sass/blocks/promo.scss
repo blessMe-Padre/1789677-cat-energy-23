@@ -1,0 +1,19 @@
+.promo {
+  background-color: lighten($basic_green, 20%);
+  // .promo__title
+
+  &__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic_white;
+  }
+
+  // .promo__slogan
+
+  &__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic_white;
+  }
+}

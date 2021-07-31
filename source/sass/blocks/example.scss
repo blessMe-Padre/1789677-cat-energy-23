@@ -1,0 +1,113 @@
+.example {
+
+  // .example__title
+
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: $basic_black;
+  }
+
+  // .example__text
+
+  &__text {
+    font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  }
+
+  // .example__stat
+
+  &__stat {
+  }
+
+  // .example__price
+
+  &__price + span {
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic_black;
+  }
+
+  // .example__photos-list
+
+  &__photos-list {
+  }
+
+  // .example__photos-item
+
+  &__photos-item {
+  }
+}
+.example-stat {
+
+  // .example-stat__item
+
+  &__item {
+  }
+
+  // .example-stat__number
+
+  &__number {
+    font-size: 24px;
+    line-height: 24px;
+    color: $basic_black;
+  }
+
+  // .example-stat__description
+
+  &__description {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: $special_dark-grey;
+  }
+}
+.slider {
+
+  // .slider__list
+
+  &__list {
+  }
+
+  // .slider__item
+
+  &__item {
+  }
+
+  // .slider__controls
+
+  &__controls {
+  }
+
+  // .slider__before
+
+  &__before {
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  // .slider__scale
+
+  &__scale {
+  }
+
+  // .slider__htoggle
+
+  &__htoggle {
+  }
+
+  // .slider__affter
+
+  &__affter {
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+}

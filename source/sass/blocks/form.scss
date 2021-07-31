@@ -1,0 +1,115 @@
+.filter {
+
+  // .filter__inner
+
+  &__inner {
+  }
+
+  // .filter__list
+
+  &__list {
+    border: none;
+    padding: 0;
+  }
+
+  // .filter__item
+
+  &__item {
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special_dark-grey;
+  }
+
+  // .filter__message
+
+  &__message {
+    padding: 0;
+    border: none;
+    font-size: 24px;
+    line-height: 26px;
+    color: $basic_black;
+    margin-bottom: 30px;
+  }
+
+
+  // .filter__checkbox
+
+  &__checkbox {
+    border: none;
+    font-size: 24px;
+    line-height: 26px;
+    color: $basic_black;
+  }
+}
+
+.filter__contact {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.filter__contact legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+  margin-bottom: 30px;
+}
+
+.filter-field {
+}
+.filter-input {
+  padding: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+.filter-list {
+  padding: 0;
+  list-style: none;
+}
+.custom-radio {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+.form-email {
+  margin-bottom: 20px;
+}
+.user-email, .user-phone{
+  padding: 14px 16px;
+}
+.form-phone {
+}
+
+.user-message {
+  min-height: 150px;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+
+.checkbox-list {
+  list-style: none;
+  padding: 0;
+  // .checkbox-list__item
+
+  &__item {
+  }
+}
+.custom-check {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+
+.button--form {
+  border: none;
+}

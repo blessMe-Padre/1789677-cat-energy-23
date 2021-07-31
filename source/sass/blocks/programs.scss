@@ -1,0 +1,52 @@
+.programs {
+
+  // .programs__list
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  // .programs__card
+
+  &__card {
+    background-color: $basic_grey;
+  }
+}
+
+.programs-card {
+
+  // .programs-card__title
+
+  &__title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  // .programs-card__text
+
+  &__text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special_dark-grey;
+  }
+
+  // .programs-card__link
+
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+}
+.programs-card--slim {
+}
+.programs-card--fat {
+}
