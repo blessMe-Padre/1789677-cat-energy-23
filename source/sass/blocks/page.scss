@@ -1,0 +1,55 @@
+
+.page {
+  height: 100%;
+}
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $special_dark-grey;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic_black;
+}
+
+.page__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

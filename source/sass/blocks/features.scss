@@ -1,0 +1,56 @@
+.features {
+
+  // .features__title
+
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: $basic_black;
+  }
+
+  // .features__list
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  // .features__item
+
+  &__item {
+  }
+
+  // .features__item--nutrients
+
+  &__item--nutrients {
+  }
+
+  // .features__text
+
+  &__text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special_dark-grey;
+  }
+
+  // .features__item--powder
+
+  &__item--powder {
+  }
+
+  // .features__item--surrogate
+
+  &__item--surrogate {
+  }
+
+  // .features__item--enjoy
+
+  &__item--enjoy {
+  }
+}
