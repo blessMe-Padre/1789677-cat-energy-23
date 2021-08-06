@@ -1,52 +1,106 @@
-.programs {
+.programs__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  // .programs__list
+.programs__card {
+  background-color: $basic_grey;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
-
-  // .programs__card
-
-  &__card {
-    background-color: $basic_grey;
+.programs-card__title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic_black;
+  padding-left: 91px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: $basic_green;
+    border-radius: 50%;
   }
 }
 
-.programs-card {
+.programs-card__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
 
-  // .programs-card__title
+.programs-card__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic_black;
+}
 
-  &__title {
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $basic_black;
+@media (min-width: $tablet-width) {
+
+  .programs-card {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
+  .programs-card__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
 
-  // .programs-card__text
-
-  &__text {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: $special_dark-grey;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: -37px;
+      left: 60%;
+      background-color: $basic_green;
+      border-radius: 50%;
+    }
   }
-
-  // .programs-card__link
-
-  &__link {
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $basic_black;
+  .programs-card__text {
+    max-width: 340px;
+  }
+  .programs-card__link {
+    margin-bottom: 50px;
   }
 }
-.programs-card--slim {
-}
-.programs-card--fat {
+
+@media (min-width: $desktop-width) {
+  .programs__card {
+    max-width: 570px;
+    box-sizing: border-box;
+    &:not(:nth-child(even)) {
+      margin-right: 80px;
+    }
+  }
+  .programs-card__title {
+    padding-left: 214px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -35px;
+      left: 0;
+      background-color: $basic_green;
+      border-radius: 50%;
+    }
+  }
+  .programs-card__text {
+    max-width: 100%;
+  }
 }
