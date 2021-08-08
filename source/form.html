@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Подбор программы</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
@@ -10,16 +11,23 @@
 
 <body class="page__body">
   <header class="page-header container">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.png" width="34" height="38" alt="Кэт энерджи">
-    </a>
-    <img src="img/site-logo.svg" width="101" height="18" alt="cat energy">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="page-header__header">
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source srcset="img/logo-mobile.png" type="image/png" media="(max-width:767px)">
+          <source srcset="img/logo-tablet.png" type="image/png" media="(min-width:768px)">
+          <source srcset="img/logo-desktop.png" type="image/png" media="(min-width:1220px)">
+          <img src="img/logo-mobile.png" alt="Кэт энерджи">
+        </picture>
+      </a>
+      <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li><a class="site-list__item site-list__item--current" href="index.html">Главная</a></li>
-        <li><a class="site-list__item" href="catalog.html">Каталог продукции</a></li>
-        <li><a class="site-list__item" href="form.html">Подбор программы</a></li>
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item  site-list__item--current"><a href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -35,11 +43,11 @@
             <input class="filter-input" type="text" id="animal" placeholder="барсик">
           </ul>
           <ul class="filter__item">
-            <label for="weight">вес(кг):*</label>
+            <label for="weight">вес (кг):*</label>
             <input class="filter-input" type="text" id="weight" placeholder="7">
           </ul>
           <ul class="filter__item">
-            <label for="age">возраст:*</label>
+            <label for="age">возраст (лет)</label>
             <input class="filter-input" type="text" id="age" placeholder="7">
           </ul>
         </fieldset>
@@ -102,22 +110,22 @@
     </form>
   </main>
   <footer class="page-footer">
-    <div class="footer-map">
-      <div class="container">
-        <div class="contact-block">
-          <p class="contact-block__invite">
-            приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contact-block__address">
-            <p>ул. Большая
-              Конюшенная, д. 19/8</p>
-            <p>Санкт-Петербург</p>
-          </address>
-        </div>
-      </div>
+    <div class="contact-block container">
+      <p class="contact-block__invite">
+        приглашаем к сотрудничеству дилеров!
+      </p>
+      <address class="contact-block__address">
+        <p>ул. Большая
+          Конюшенная, д. 19/8</p>
+        <p>Санкт-Петербург</p>
+      </address>
+    </div>
+    <div class="footer__map">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"></iframe>
     </div>
     <div class="footer-social container">
-      <img src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      <img class="footer-social__img" src="img/site-logo.svg" width="128" height="24" alt="cat energy">
       <ul class="footer-social__list">
         <li class="footer-social__icon">
           <a href="#"><img src="img/social-icon/vkontakte.svg" width="30" height="22" alt="ВКонтакте"></a>

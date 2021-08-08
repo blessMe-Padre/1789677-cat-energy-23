@@ -1,19 +1,25 @@
 .button {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   text-align: center;
-  width: 100%;
-  padding: 14px 26px;
+  padding: 14px 18px;
   background-color: $basic_green;
   color: $basic_white;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-
 }
 
 .button--product {
+  grid-column: 1 / 3;
+  margin-bottom: 30px;
+}
 
+.button--goods {
+  flex: 1 1 auto;
+}
+
+.button--form {
+  border: none;
 }
 
 .button--show-all {
@@ -21,3 +27,26 @@
   background-color: $basic_grey;
 }
 
+@media (min-width: $tablet-width) {
+  .button--promo {
+    position: absolute;
+    top: 240px;
+    left: 151px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--promo {
+    top: 250px;
+    left: 82px;
+  }
+  .button--goods {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 96px;
+  }
+}

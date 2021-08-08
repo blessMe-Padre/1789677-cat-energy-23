@@ -1,48 +1,97 @@
-.page-footer {
-}
-.footer-map {
-}
+
+
+
 .contact-block {
-    background-color: $basic_grey;
-
-		// .contact-block__invite
-
-		&__invite {
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-      color: $basic_black-2;
-		}
-
-		// .contact-block__address
-
-		&__address {
-      font-family: Arial;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 20px;
-      color: $special_dark-grey;
-		}
+  display: flex;
+  justify-content: space-around;
+  padding: 26px 20px;
 }
+
+.contact-block__invite {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic_black-2;
+  padding-right: 10px;
+}
+
+.contact-block__address {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+  padding: 16px 0;
+}
+
+.contact-block__address p {
+  margin: 0;
+}
+
+.footer__map iframe {
+  width: 100%;
+  height: 362px;
+  border: none;
+}
+
 .footer-social {
-
-		// .footer-social__list
-
-		&__list {
-      padding: 0;
-      list-style: none;
-		}
-
-		// .footer-social__icon
-
-		&__icon {
-		}
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-social__img {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-social__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 .product-by {
+  display: flex;
+  justify-content: space-between;
+}
 
-		// .product-by__text
+@media (min-width: $tablet-width) {
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-social__img {
+    margin: 0;
+  }
+  .product-by__text {
+    margin-right: 20px;
+  }
+}
 
-		&__text {
-		}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+  .contact-block {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    left: 50px;
+    max-width: 570px;
+    height: 201px;
+    background-color: $basic_white;
+    justify-content: space-between;
+  }
 }

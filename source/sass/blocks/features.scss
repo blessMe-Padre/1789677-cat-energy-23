@@ -1,56 +1,86 @@
-.features {
+.features__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic_black;
+}
 
-  // .features__title
-
-  &__title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 40px;
-    color: $basic_black;
+.features__item {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  min-height: 60px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
   }
+}
 
-  // .features__list
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.features__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-
-  // .features__item
-
-  &__item {
+  .features__item {
+    min-height: 280px;
+    width: 230px;
+    padding-left: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-color: $basic_green;
+    }
   }
-
-  // .features__item--nutrients
-
-  &__item--nutrients {
+  .features__text {
+    padding-top: 151px;
   }
-
-  // .features__text
-
-  &__text {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: $special_dark-grey;
+  .features__item--nutrients {
+    background-image: url(../../img/features/1.png);
   }
-
-  // .features__item--powder
-
-  &__item--powder {
+  .features__item--powder {
+    background-image: url(../../img/features/2.png);
   }
-
-  // .features__item--surrogate
-
-  &__item--surrogate {
+  .features__item--surrogate {
+    background-image: url(../../img/features/3.png);
   }
+  .features__item--enjoy {
+    background-image: url(../../img/features/4.png);
+  }
+}
 
-  // .features__item--enjoy
-
-  &__item--enjoy {
+@media (min-width: $desktop-width) {
+  .features__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .features__item {
+    width: 230px;
   }
 }
