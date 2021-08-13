@@ -19,9 +19,6 @@
   align-items: center;
 }
 
-.goods__gift-img {
-}
-
 .goods__gift-text {
   font-family: Arial;
   font-weight: normal;
@@ -106,7 +103,7 @@
   }
   .goods__gift {
     flex-direction: column;
-    min-height: 289px;
+    min-height: 260px;
     width: 245px;
   }
 }

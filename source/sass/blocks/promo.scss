@@ -1,8 +1,7 @@
 .promo {
+  position: relative;
   padding-top: 20px;
-  background-image: url('../img/promo/promo-bg-mobile.png');
-  background-position: top center;
-  background-repeat: no-repeat;
+  padding-bottom: 80px;
 }
 
 .promo__title {
@@ -24,13 +23,15 @@
   text-align: center;
 }
 
+.promo__img {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     background: none;
     position: relative;
-  }
-  .promo img {
-    padding-left: 55px;
   }
   .promo__title {
     font-size: 60px;
@@ -54,7 +55,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 550px;
+    min-height: 553px;
   }
   .promo__title {
     padding-left: 75px;
@@ -62,13 +63,10 @@
   .promo__slogan {
     padding-left: 75px;
   }
-  .promo img {
+  .promo__img {
     position: absolute;
-    width: 552px;
-    height: 499px;
-    top: 0;
-    left: 41%;
-    padding-left: 0;
+    top: 91px;
+    left: 459px;
   }
 }
 
