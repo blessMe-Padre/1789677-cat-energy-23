@@ -42,10 +42,23 @@
 }
 
 .programs-card__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $basic_black;
+  padding-right: 55px;
+}
+
+.programs-card__link::after {
+  position: absolute;
+  content: " ";
+  top: 6px;
+  right: 0;
+  height: 10px;
+  width: 35px;
+  background-image: url(../../img/programs/arror-right.svg);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {

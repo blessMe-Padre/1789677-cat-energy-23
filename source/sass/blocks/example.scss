@@ -14,6 +14,11 @@
 .example__stat {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.example-stat__item {
+  text-align: center;
 }
 
 .example__text {
@@ -21,11 +26,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  margin-bottom: 25px;
 }
 
 .example__price {
   display: flex;
   justify-content: center;
+  margin-bottom: 42px;
 }
 
 .example__price + span {
@@ -38,6 +45,8 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .example-stat__description {
@@ -47,10 +56,15 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+  width: 70px;
 }
 
 .slider {
   padding-bottom: 30px;
+}
+
+.slider__controls {
+  text-transform: uppercase;
 }
 
 .slider__list {
@@ -58,6 +72,25 @@
   list-style: none;
 }
 
+.slider__scale {
+  display: none;
+}
+
+.slider__before,
+.slider__affter {
+  cursor: pointer;
+  border-bottom: 1px dashed $basic_black;
+}
+
+.slider__before:hover,
+.slider__affter:hover {
+  border-bottom: 1px solid $basic_black;
+}
+
+.slider__before:active,
+.slider__affter:active {
+  border-bottom: none;
+}
 
 @media (min-width: $tablet-width) {
   .example__stat {
@@ -79,6 +112,7 @@
   }
   .slider__scale {
     position: relative;
+    display: inline-block;
     width: 428px;
     height: 6px;
     background: $basic_grey-3;
@@ -95,6 +129,7 @@
     background-color: $basic_white;
     border-radius: 50%;
     cursor: pointer;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   }
   .slider__toggle::before {
     position: absolute;
@@ -107,11 +142,22 @@
     background-color: $basic_green;
     transform: translate(-50%, -50%);
   }
+  .slider__toggle:hover {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  }
+  .slider__toggle:active {
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+    border: 1px solid $basic_green;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .example__wrapper {
+    max-width: 436px;
+  }
   .example__desc {
     display: flex;
+    justify-content: space-between;
   }
   .example-stat__wrapper {
     flex-direction: column;

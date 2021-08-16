@@ -73,3 +73,28 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+.title-line {
+  position: relative;
+  display: inline-block;
+}
+
+.title-line::before,
+.title-line::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  height: 3px;
+  background: $basic_green;
+}
+
+.title-line::before {
+  left: 0;
+}
+
+.title-line::after {
+  right: 20px;
+}
+
