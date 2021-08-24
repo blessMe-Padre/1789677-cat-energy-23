@@ -13,10 +13,17 @@
 
 .goods__gift {
   min-height: 200px;
+  padding: 60px 10px 43px 10px;
   background-color: $basic_green;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-image: url(../img/block_gift.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68b738;
+  background-size: cover;
 }
 
 .goods__gift-text {
@@ -72,7 +79,11 @@
     align-items: flex-end;
   }
   .goods__gift {
+    box-sizing: border-box;
+    padding-left: 78px;
     flex-direction: row;
+    justify-content: space-around;
+    max-width: 632px;
   }
 }
 
@@ -81,6 +92,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+  }
+  .goods__gift {
+    padding-left: 0;
   }
   .goods__product {
     margin: 0;

@@ -6,30 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Подбор программы</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header container main-nav--nojs">
-    <div class="page-header__header">
-      <a href="index.html" class="page-header__logo">
-        <picture>
-          <source srcset="img/logo-mobile.png" type="image/png" media="(max-width:767px)">
-          <source srcset="img/logo-tablet.png" type="image/png" media="(min-width:768px)">
-          <source srcset="img/logo-desktop.png" type="image/png" media="(min-width:1220px)">
-          <img src="img/logo-mobile.png" alt="Кэт энерджи">
-        </picture>
-      </a>
-      <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+  <header class="page-header main-nav--nojs">
+    <div class="page-header__container">
+      <div class="page-header__header">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source srcset="img/logo/logo-mobile.png 1x, img/logo/logo-mobile@2x.png 2x" type="image/png"
+              media="(max-width:767px)">
+            <source srcset="img/logo/logo-tablet.png 1x, img/logo/logo-tablet@2x.png 2x" type="image/png"
+              media="(min-width:768px)">
+            <source srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x," type="image/png"
+              media="(min-width:1220px)">
+            <img src="img/logo/logo-mobile.png" alt="Кэт энерджи">
+          </picture>
+        </a>
+        <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="main-nav main-nav--opened">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item site-list__item--current"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--opened">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item site-list__item--current"><a href="form.html">Подбор программы</a></li>
-      </ul>
-    </nav>
   </header>
   <main class="page-main container">
     <h1 class="page__title">Подбор программы</h1>
@@ -74,11 +80,17 @@
           <label for="email">E-mail:*</Label>
           <input class="user-email filter__item-data" id="email" type="email" name="email"
             placeholder="кuklachev@gmail.com">
+          <svg class="form-email__icon" width="30" height="22">
+            <use xlink:href="img/sprite.svg#email"></use>
+          </svg>
         </div>
         <div class="form-phone">
           <label for="phone">Телефон:*</Label>
           <input class="user-phone filter__item-data" id="phone" type="tel" name="phone"
             placeholder="8 (960) 900-60-90">
+          <svg class="form-phone__icon" width="30" height="22">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
         </div>
       </fieldset>
       <fieldset class="filter__message">
@@ -115,7 +127,7 @@
     <div class="contact-container">
       <div class="contact-block">
         <p class="contact-block__invite">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем<br> к сотрудничеству дилеров!
         </p>
         <address class="contact-block__address">
           <p>ул. Большая
@@ -129,25 +141,41 @@
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"></iframe>
     </div>
     <div class="footer-social container">
-      <img class="footer-social__img" src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      <a class="footer-social__img" href="#">
+        <img src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      </a>
       <ul class="footer-social__list">
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/vkontakte.svg" width="30" height="22" alt="ВКонтакте"></a>
+          <a href="#">
+            <svg width="30" height="22">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/instagram.svg" width="23" height="23" alt="Инстаграмм"></a>
+          <a href="#">
+            <svg width="23" height="23">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/facebook.svg" width="28" height="32" alt="Фейсбук"></a>
+          <a href="#">
+            <svg width="28" height="33">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="product-by">
-        <div class="product-by__text">HTML Academy</div>
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
-      </div>
+      <a href="#" class="product-by">
+        <span class="product-by__text">HTML Academy</span>
+        <svg width="27" height="34">
+          <use class="product-by__img" xlink:href="img/sprite.svg#academy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
-  <script src="./js/app.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

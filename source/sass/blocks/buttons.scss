@@ -30,11 +30,21 @@
 
 .button--form {
   border: none;
+  width: 100%;
 }
 
 .button--show-all {
   color: $special_dark-grey;
   background-color: $basic_grey;
+}
+
+.button--show-all:hover {
+  background-color: #EBEBEB;
+}
+
+.button--show-all:active {
+  color: $special_dark-grey;
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {

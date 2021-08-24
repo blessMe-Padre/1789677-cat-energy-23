@@ -6,30 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Каталог продукции</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header container main-nav--nojs">
-    <div class="page-header__header">
-      <a href="index.html" class="page-header__logo">
-        <picture>
-          <source srcset="img/logo-mobile.png" type="image/png" media="(max-width:767px)">
-          <source srcset="img/logo-tablet.png" type="image/png" media="(min-width:768px)">
-          <source srcset="img/logo-desktop.png" type="image/png" media="(min-width:1220px)">
-          <img src="img/logo-mobile.png" alt="Кэт энерджи">
-        </picture>
-      </a>
-      <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+  <header class="page-header main-nav--nojs">
+    <div class="page-header__container">
+      <div class="page-header__header">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source srcset="img/logo/logo-mobile.png 1x, img/logo/logo-mobile@2x.png 2x" type="image/png"
+              media="(max-width:767px)">
+            <source srcset="img/logo/logo-tablet.png 1x, img/logo/logo-tablet@2x.png 2x" type="image/png"
+              media="(min-width:768px)">
+            <source srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x," type="image/png"
+              media="(min-width:1220px)">
+            <img src="img/logo/logo-mobile.png" alt="Кэт энерджи">
+          </picture>
+        </a>
+        <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="main-nav main-nav--opened">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current-white"><a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item  site-list__item--current"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--opened">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="index.html">Главная</a></li>
-        <li class="site-list__item site-list__item--current"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-      </ul>
-    </nav>
   </header>
   <main class="page-main">
     <h1 class="page__title">Каталог продукции</h1>
@@ -41,9 +47,17 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-1-desktop.webp 1x, img/product/catalog-1-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-1-desktop.png 1x, img/product/catalog-1-desktop@2x.png 2x">
+
+                <source media="(min-width:768px)"
+                  srcset="img/product/catalog-1-tablet.webp 1x, img/product/catalog-1-tablet@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="img/product/catalog-1-tablet.png 1x, img/product/catalog-1-tablet@2x.png 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-1-mobile.webp 1x, img/product/catalog-1-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-1-mobile.png 1x, img/product/catalog-1-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-1-mobile.png"
@@ -74,9 +88,17 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-2-desktop.webp 1x, img/product/catalog-2-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-2-desktop.png 1x, img/product/catalog-2-desktop@2x.png 2x">
+
+                <source media="(min-width:768px)"
+                  srcset="img/product/catalog-2-tablet.webp 1x, img/product/catalog-2-tablet@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="img/product/catalog-2-tablet.png 1x, img/product/catalog-2-tablet@2x.png 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-2-mobile.webp 1x, img/product/catalog-2-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-2-mobile.png 1x, img/product/catalog-2-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-2-mobile.png"
@@ -107,9 +129,17 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-3-desktop.webp 1x, img/product/catalog-3-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-3-desktop.png 1x, img/product/catalog-3-desktop@2x.png 2x">
+
+                <source media="(min-width:768px)"
+                  srcset="img/product/catalog-3-tablet.webp 1x, img/product/catalog-3-tablet@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="img/product/catalog-3-tablet.png 1x, img/product/catalog-3-tablet@2x.png 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-3-mobile.webp 1x, img/product/catalog-3-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-3-mobile.png 1x, img/product/catalog-3-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-3-mobile.png"
@@ -140,9 +170,17 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-4-desktop.webp 1x, img/product/catalog-4-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-4-desktop.png 1x, img/product/catalog-4-desktop@2x.png 2x">
+
+                <source media="(min-width:768px)"
+                  srcset="img/product/catalog-4-tablet.webp 1x, img/product/catalog-4-tablet@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="img/product/catalog-4-tablet.png 1x, img/product/catalog-4-tablet@2x.png 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-4-mobile.webp 1x, img/product/catalog-4-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-4-mobile.png 1x, img/product/catalog-4-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-4-mobile.png"
@@ -173,11 +211,19 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-5-desktop.webp 1x, img/product/catalog-5-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-5-desktop.png 1x, img/product/catalog-5-desktop@2x.png 2x">
+
+                <source media="(min-width:768px)"
+                  srcset="img/product/catalog-5-tablet.webp 1x, img/product/catalog-5-tablet@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="img/product/catalog-5-tablet.png 1x, img/product/catalog-5-tablet@2x.png 2x">
+
                 <source media="(max-width:767px)"
-                  srcset="img/product/catalog-5-mobile.png 1x, img/product/catalog-5-mobile@2x.png 2x">
+                  srcset="img/product/catalog-5-mobile.webp 1x, img/product/catalog-5-mobile@2x.png 2x">
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-5-mobile.webp 1x, img/product/catalog-5-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-5-mobile.png"
                   srcset="img/product/catalog-5-mobile@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
               </picture>
@@ -206,9 +252,16 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-6-desktop.webp 1x, img/product/catalog-6-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-6-desktop.png 1x, img/product/catalog-6-desktop@2x.png 2x">
                 <source media="(min-width:768px)"
+                  srcset="img/product/catalog-6-tablet.webp 1x, img/product/catalog-6-tablet@2x.webp 2x">
+                <source media="(min-width:768px)"
                   srcset="img/product/catalog-6-tablet.png 1x, img/product/catalog-6-tablet@2x.png 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-6-mobile.webp 1x, img/product/catalog-6-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-6-mobile.png 1x, img/product/catalog-6-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-6-mobile.png"
@@ -239,9 +292,15 @@
             <a href="#">
               <picture>
                 <source media="(min-width:1220px)"
+                  srcset="img/product/catalog-7-desktop.webp 1x, img/product/catalog-7-desktop@2x.webp 2x">
+                <source media="(min-width:1220px)"
                   srcset="img/product/catalog-7-desktop.png 1x, img/product/catalog-7-desktop@2x.png 2x">
                 <source media="(min-width:768px)"
+                  srcset="img/product/catalog-7-tablet.webp 1x, img/product/catalog-7-tablet@2x.webp 2x">
+                <source media="(min-width:768px)"
                   srcset="img/product/catalog-7-tablet.png 1x, img/product/catalog-7-tablet@2x.png 2x">
+                <source media="(max-width:767px)"
+                  srcset="img/product/catalog-7-mobile.webp 1x, img/product/catalog-7-mobile@2x.webp 2x">
                 <source media="(max-width:767px)"
                   srcset="img/product/catalog-7-mobile.png 1x, img/product/catalog-7-mobile@2x.png 2x">
                 <img class="product-card__image" src="img/product/catalog-7-mobile.png"
@@ -316,8 +375,10 @@
           </li>
         </ul>
         <a href="#">
-          <div class="goods__gift contaiber">
-            <img class="goods__gift-img" width="78" height="80" src="img/icon_gift.svg" alt="подарок">
+          <div class="goods__gift">
+            <svg width="80" height="82">
+              <use xlink:href="img/sprite.svg#gift"></use>
+            </svg>
             <p class="goods__gift-text">Закажите все
               и получите чехол для
               кота в подарок!</p>
@@ -330,7 +391,7 @@
     <div class="contact-container">
       <div class="contact-block">
         <p class="contact-block__invite">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем<br> к сотрудничеству дилеров!
         </p>
         <address class="contact-block__address">
           <p>ул. Большая
@@ -344,25 +405,41 @@
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"></iframe>
     </div>
     <div class="footer-social container">
-      <img class="footer-social__img" src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      <a class="footer-social__img" href="#">
+        <img src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      </a>
       <ul class="footer-social__list">
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/vkontakte.svg" width="30" height="22" alt="ВКонтакте"></a>
+          <a href="#">
+            <svg width="30" height="22">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/instagram.svg" width="23" height="23" alt="Инстаграмм"></a>
+          <a href="#">
+            <svg width="23" height="23">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/facebook.svg" width="28" height="32" alt="Фейсбук"></a>
+          <a href="#">
+            <svg width="28" height="33">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="product-by">
-        <div class="product-by__text">HTML Academy</div>
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
-      </div>
+      <a href="#" class="product-by">
+        <span class="product-by__text">HTML Academy</span>
+        <svg width="27" height="34">
+          <use class="product-by__img" xlink:href="img/sprite.svg#academy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
-  <script src="./js/app.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
