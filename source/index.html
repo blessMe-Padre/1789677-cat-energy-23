@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
+
   <header class="page-header page-header--bg main-nav--nojs">
     <div class="page-header__container">
       <div class="page-header__header">
         <a href="#" class="page-header__logo">
           <picture>
-            <source srcset="img/logo-mobile.png" type="image/png" media="(max-width:767px)">
-            <source srcset="img/logo-tablet.png" type="image/png" media="(min-width:768px)">
-            <source srcset="img/logo-desktop.png" type="image/png" media="(min-width:1220px)">
-            <img src="img/logo-mobile.png" alt="Кэт энерджи">
+            <source srcset="img/logo/logo-mobile.png 1x, img/logo/logo-mobile@2x.png 2x" type="image/png"
+              media="(max-width:767px)">
+            <source srcset="img/logo/logo-tablet.png 1x, img/logo/logo-tablet@2x.png 2x" type="image/png"
+              media="(min-width:768px)">
+            <source srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x," type="image/png"
+              media="(min-width:1220px)">
+            <img src="img/logo/logo-mobile.png" alt="Кэт энерджи">
           </picture>
         </a>
         <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
@@ -26,11 +30,11 @@
       </div>
       <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item-white site-list__item--current site-list__item--current-white"><a
+          <li class="site-list__item site-list__item--white site-list__item--current site-list__item--current-white"><a
               href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item-white"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item site-list__item-white"><a href="form.html">Подбор программы</a></li>
+          <li class="site-list__item site-list__item--white"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item site-list__item--white"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -50,23 +54,29 @@
       <a class="button button--promo" href="form.html">подобрать программу</a>
     </section>
     <section class="programs container">
-      <h2 class="visually-hidden">Программы питания</h1>
-        <ul class="programs__list">
-          <li class="programs__card programs-card programs-card--slim">
-            <h3 class="programs-card__title">похудение</h3>
-            <p class="programs-card__text">Ваш кот весит больше собаки и почти утратил способность
-              лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-              вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="programs-card__link">каталог slim</a>
-          </li>
-          <li class="programs__card programs-card programs-card--fat">
-            <h3 class="programs-card__title">набор массы</h3>
-            <p class="programs-card__text">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить
-              необходимые мышцы!</p>
-            <a href="#" class="programs-card__link">каталог pro</a>
-          </li>
-        </ul>
+      <h2 class="visually-hidden">Программы питания</h2>
+      <ul class="programs__list">
+        <li class="programs__card programs-card programs-card--slim">
+          <div class="programs-card__img">
+            <img src="img/programs/cat_back.svg" width="50" height="53" alt="кот">
+          </div>
+          <h3 class="programs-card__title">похудение</h3>
+          <p class="programs-card__text">Ваш кот весит больше собаки и почти утратил способность
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+            вашему питомцу сбросить лишний вес.</p>
+          <a href="form.html" class="programs-card__link">каталог slim</a>
+        </li>
+        <li class="programs__card programs-card programs-card--fat">
+          <div class="programs-card__img">
+            <img src="img/programs/cat_back-2.svg" width="67" height="50" alt="кот">
+          </div>
+          <h3 class="programs-card__title">набор массы</h3>
+          <p class="programs-card__text">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить
+            необходимые мышцы!</p>
+          <a href="form.html" class="programs-card__link">каталог pro</a>
+        </li>
+      </ul>
     </section>
     <section class="features container">
       <h2 class="features__title">Как это работает</h2>
@@ -93,52 +103,62 @@
         </li>
       </ul>
     </section>
-    <section class="example container">
-      <h2 class="example__title">Живой пример</h2>
-      <div class="example__desc">
-        <div class="example__wrapper">
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example-stat__wrapper">
-            <div class="example__stat">
-              <div class="example-stat__item">
-                <div class="example-stat__number">5 кг</div>
-                <div class="example-stat__description">снижение веса</div>
+    <section class="example">
+      <div class="container">
+        <h2 class="example__title">Живой пример</h2>
+        <div class="example__desc">
+          <div class="example__wrapper">
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+              без
+              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="example-stat__wrapper">
+              <div class="example__stat">
+                <div class="example-stat__item">
+                  <div class="example-stat__number">5 кг</div>
+                  <div class="example-stat__description">снижение веса</div>
+                </div>
+                <div class="example-stat__item">
+                  <div class="example-stat__number">60 дней</div>
+                  <div class="example-stat__description">затрачено времени</div>
+                </div>
               </div>
-              <div class="example-stat__item">
-                <div class="example-stat__number">60 дней</div>
-                <div class="example-stat__description">затрачено времени</div>
+              <div class="example__price">
+                <span>Затраты на питание:</span><span>15 000 руб.</span>
               </div>
-            </div>
-            <div class="example__price">
-              <span>Затраты на питание:</span><span>15 000 руб.</span>
             </div>
           </div>
-        </div>
-        <div class="slider">
-          <ul class="example__photos-list slider__list">
-            <li class="example__photos-item slider__item">
-              <picture>
-                <source media="(min-width:1220px)"
-                  srcset="img/example/cat_tablet.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
-                <source media="(min-width:768px)"
-                  srcset="img/example/cat_tablet.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
-                <source media="(max-width:767px)"
-                  srcset="img/example/before-mobile.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
-                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот">
-              </picture>
-            </li>
-            <li class="example__photos-item slider__item"></li>
-          </ul>
-          <div class="slider__controls">
-            <span class="slider__before">было</span>
-            <input type="range">
-            <div class="slider__scale">
-              <div class="slider__toggle"></div>
+          <div class="slider">
+            <ul class="example__photos-list slider__list">
+              <li class="example__photos-item slider__item">
+                <picture>
+                  <source media="(min-width:1220px)"
+                    srcset="img/example/cat_tablet.webp 1x, img/example/cat_tablet@2x.webp 2x" type="image/png">
+                  <source media="(min-width:1220px)"
+                    srcset="img/example/cat_tablet.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
+                  <source media="(min-width:768px)"
+                    srcset="img/example/cat_tablet.webp 1x, img/example/cat_tablet@2x.webp 2x" type="image/png">
+                  <source media="(min-width:768px)"
+                    srcset="img/example/cat_tablet.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
+                  <source media="(max-width:767px)"
+                    srcset="img/example/before-mobile.webp 1x, img/example/cat_tablet@2x.webp 2x" type="image/png">
+                  <source media="(max-width:767px)"
+                    srcset="img/example/before-mobile.png 1x, img/example/cat_tablet@2x.png 2x" type="image/png">
+                  <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот">
+                </picture>
+              </li>
+              <li class="example__photos-item slider__item"></li>
+            </ul>
+            <div class="slider__pictures">
+              <div class="slider__toggle">
+                <button class="slider__button slider__button--before">Было</button>
+                <input id="slider" class="slider__range range" type="range" min="0" max="100" value="50" />
+                <input type="checkbox" class="slider__checkbox" id='slider-checkbox'>
+                <label class="slider__checkbox-label" for="slider-checkbox">Переключение слайдера</label>
+                <button class="slider__button slider__button--after">Стало</button>
+              </div>
             </div>
-            <span class="slider__affter">стало</span>
           </div>
         </div>
       </div>
@@ -163,25 +183,41 @@
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"></iframe>
     </div>
     <div class="footer-social container">
-      <img class="footer-social__img" src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      <a class="footer-social__img" href="#">
+        <img src="img/site-logo.svg" width="128" height="24" alt="cat energy">
+      </a>
       <ul class="footer-social__list">
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/vkontakte.svg" width="30" height="22" alt="ВКонтакте"></a>
+          <a href="#">
+            <svg width="30" height="22">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/instagram.svg" width="23" height="23" alt="Инстаграмм"></a>
+          <a href="#">
+            <svg width="23" height="23">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-social__icon">
-          <a href="#"><img src="img/social-icon/facebook.svg" width="28" height="32" alt="Фейсбук"></a>
+          <a href="#">
+            <svg width="28" height="33">
+              <use class="svg-link-hover" xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="product-by">
-        <div class="product-by__text">HTML Academy</div>
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
-      </div>
+      <a href="#" class="product-by">
+        <span class="product-by__text">HTML Academy</span>
+        <svg width="27" height="34">
+          <use class="product-by__img" xlink:href="img/sprite.svg#academy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
-  <script src="./js/app.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

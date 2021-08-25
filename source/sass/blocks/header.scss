@@ -6,11 +6,10 @@
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  margin-bottom: 40px;
 }
 
 .page-header__container {
-  max-width: 1240;
+  max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -28,6 +27,7 @@
   z-index: -1;
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo/promo-bg-mobile@2x.png");
+      background-size: cover;
     }
 }
 
@@ -42,6 +42,16 @@
 
   .main-nav--opened .site-list {
   display: block;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: 1px solid #E6E6E6;
+  }
+  .main-nav--opened .site-list__item:last-child {
+    border-bottom: 1px solid #E6E6E6;
   }
 }
 
@@ -94,19 +104,19 @@
 }
 
 .site-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .site-list__item {
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 0;
+  padding: 22px 0 10px 0;
 }
 
 .site-list__item a {
@@ -116,9 +126,8 @@
 @media (min-width: $tablet-width) {
 
   .page-header__container {
-    min-width: 708px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,12 +149,21 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
   }
 
   .site-list__item {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 0;
+  }
+
+  .site-list__item:hover {
+    opacity: 0.6;
+  }
+  .site-list__item:active {
+    opacity: 0.3;
   }
 
   .site-list__item--current {
@@ -170,14 +188,27 @@
     right: 0;
     left: inherit;
     background-image: url(../img/promo/promo-bg-desktop.png);
+    background-size: cover;
   }
   .page-header__container {
     width: 1220px;
     margin: 0 auto;
     padding: 0;
   }
-  .site-list__item-white a {
+  .page-header__logo:hover {
+    opacity: 0.8;
+  }
+  .page-header__logo:active {
+    opacity: 0.6;
+  }
+  .site-list__item--white a {
     color: $basic_white;
+  }
+  .site-list__item--white:hover {
+    opacity: 0.6;
+  }
+  .site-list__item--white:active {
+    opacity: 0.3;
   }
   .site-list__item--current-white {
     border-bottom: 2px solid $basic_white;

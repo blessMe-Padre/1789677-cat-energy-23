@@ -23,6 +23,31 @@
   }
 }
 
+.features__item--nutrients::before{
+  background-image: url(../img/features/icon_leaf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--powder::before {
+  background-image: url(../img/features/icon_tub.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--surrogate::before {
+  background-image: url(../img/features/icon_eat.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--enjoy::before {
+  background-image: url(../img/features/icon_alarm.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .features__list {
   padding: 0;
   margin: 0;
@@ -48,11 +73,11 @@
     width: 230px;
     padding-left: 0;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
     &::before {
       content: '';
       position: absolute;
-      top: 50px;
+      top: 0;
       left: 0;
       width: 80px;
       height: 80px;

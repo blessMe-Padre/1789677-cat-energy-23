@@ -33,6 +33,7 @@
 
 .filter__checkbox {
   border: none;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
@@ -42,6 +43,15 @@
   border: none;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.filter__cover {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ffffff;
+  z-index: 1;
+  padding-right: 20px;
+  max-width: 201px;
 }
 
 .filter__contact legend {
@@ -59,6 +69,21 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   margin-left: 13px;
+  border: 1px solid #E7E7E7;;
+}
+
+.filter-input:hover {
+  border: 1px solid #CDCDCD;;
+}
+
+.filter-input:focus {
+  border-radius: none;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+}
+
+.filter-input:invalid {
+  border: 2px solid $status_error;
 }
 
 .filter-list {
@@ -92,8 +117,12 @@
   border: 1px solid #BABABA;
 }
 
-.filter-input + .custom-radio::before:hover {
-  border: 1px solid #CDCDCD;
+.filter-input:hover + .custom-radio::before {
+  border: 1px solid #BABABA;
+}
+
+.filter-input:focus + .custom-radio::before {
+  border: 2px solid $basic_black;
 }
 
 .filter-input:checked + .custom-radio::after {
@@ -109,6 +138,7 @@
 
 .form-email,
 .form-phone {
+  position: relative;
   margin-bottom: 20px;
   max-width: 570px;
   display: flex;
@@ -117,9 +147,31 @@
   text-transform: uppercase;
 }
 
-.user-email, .user-phone{
-  padding: 14px 16px;
+.user-email, .user-phone {
+  position: relative;
+  padding: 14px 45px 14px 16px;
   margin-left: 15px;
+}
+
+.user-email:invalid {
+  border: 2px solid $status_error;
+}
+
+.user-email:invalid + .form-email__icon {
+  stroke: $status_error;
+}
+
+.form-email__icon,
+.form-phone__icon {
+  position: absolute;
+  right: 15px;
+}
+
+.user-email:focus + .form-email__icon {
+  stroke: $basic_green;
+}
+.user-phone:focus + .form-phone__icon {
+  stroke: $basic_green;
 }
 
 .user-message {
@@ -169,8 +221,12 @@
   border: 1px solid #CDCDCD;
 }
 
-.filter-input + .custom-check::before:hover {
+.filter-input:hover + .custom-check::before {
   border: 1px solid #BABABA;
+}
+
+.filter-input:focus + .custom-check::before {
+  border: 2px solid $basic_black;
 }
 
 .filter-input:checked + .custom-check::after {
@@ -185,7 +241,35 @@
   background-position: center;
 }
 
+.message__title-line,
+.checkbox__title-line {
+  position: relative;
+  display: block;
+}
+
+.message__title-line::after,
+.checkbox__title-line::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 100vw;
+  height: 3px;
+  background: $basic_green;
+  z-index: -1;
+  margin-left: -20px;
+}
+
+.checkbox__title-line::after {
+  top: -10px;
+}
+
 @media (min-width: $tablet-width) {
+  .filter__cover {
+    max-width: 400px;
+    padding-left: 20px;
+    margin-left: -20px;
+  }
   .checkbox-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -198,29 +282,48 @@
   .filter__duty {
     margin-left: 60px;
   }
+  .message__title-line::before,
+  .checkbox__title-line::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    background: $basic_green;
+    z-index: -1;
+  }
+  .checkbox__title-line::before {
+    top: -10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
- .filter__inner {
-   display: flex;
-   justify-content: space-between;
- }
- .filter__list {
-   flex: 1 1 50%;
- }
- .filter__contact {
-   display: flex;
-   justify-content: space-between;
- }
- .form-email {
-   flex: 1 1 50%;
- }
- .form-phone {
-  flex: 1 1 50%;
-}
- .checkbox-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  .filter__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter__list {
+    flex: 1 1 50%;
+  }
+  .filter-list {
+    padding: 20px 30px;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+  }
+  .filter__contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-email {
+    flex: 1 1 50%;
+  }
+  .form-phone {
+    flex: 1 1 50%;
+  }
+  .checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   .filter__duty {
     margin-left: 80px;
