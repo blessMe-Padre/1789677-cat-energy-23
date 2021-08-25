@@ -1,5 +1,6 @@
 
 .goods__title {
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
@@ -9,6 +10,33 @@
 .goods__product {
   padding: 0;
   list-style: none;
+}
+
+.goods__title-line {
+  position: relative;
+  display: block;
+}
+
+.goods__cover {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ffffff;
+  z-index: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 300px;
+  margin-left: -20px;
+}
+
+.goods__title-line::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  width: 100vw;
+  height: 3px;
+  background: $basic_green;
+  z-index: -1;
 }
 
 .goods__gift {
@@ -84,6 +112,16 @@
     flex-direction: row;
     justify-content: space-around;
     max-width: 632px;
+  }
+  .goods__title-line::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 100vw;
+    height: 3px;
+    background: $basic_green;
+    z-index: -1;
   }
 }
 

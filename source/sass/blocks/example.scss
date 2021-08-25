@@ -19,10 +19,11 @@
 }
 
 .example-stat__item {
+  position: relative;
   box-sizing: border-box;
   max-width: 124px;
   width: 100%;
-  padding: 15px 10px 5px;
+  padding: 10px 10px 5px;
   text-align: center;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -35,8 +36,13 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80px;
+  position: absolute;
+  background: $background-2;
+  bottom: -15px;
+  margin: 0 auto;
 }
 
 .example__text {
@@ -63,7 +69,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -87,11 +93,16 @@
 
   .example__stat {
     display: inline-flex;
-    width: 40%;
+    width: 50%;
+  }
+  .example-stat__item {
+    max-width: 162px;
   }
   .example-stat__description {
     white-space: nowrap;
-    padding: 0;
+    bottom: -5px;
+    left: 20px;
+    background: #ffffff;
   }
   .example-stat__wrapper {
     display: flex;
@@ -132,6 +143,9 @@
   .example-stat__item {
     padding: 23px 10px 20px;
     max-width: 162px;
+  }
+  .example-stat__description {
+    background: #f2f2f2;
   }
   .example-stat__number {
     font-size: 30px;

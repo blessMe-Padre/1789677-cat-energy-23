@@ -46,11 +46,11 @@
         <fieldset class="filter__list">
           <ul class="filter__item">
             <label for="animal">имя:*</label>
-            <input class="filter-input filter__item-data" type="text" id="animal" placeholder="барсик">
+            <input class="filter-input filter__item-data" type="text" id="animal" placeholder="барсик" required>
           </ul>
           <ul class="filter__item">
             <label for="weight">вес (кг):*</label>
-            <input class="filter-input filter__item-data" type="text" id="weight" placeholder="7">
+            <input class="filter-input filter__item-data" type="text" id="weight" placeholder="7" required>
           </ul>
           <ul class="filter__item">
             <label for="age">возраст (лет)</label>
@@ -74,32 +74,32 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="filter__contact">
-        <legend class="title-line">Контактные данные (владельца кота)</legend>
+      <fieldset class="filter__contact contact__title-line">
+        <legend class="filter__cover">Контактные данные (владельца кота)</legend>
         <div class="form-email">
           <label for="email">E-mail:*</Label>
           <input class="user-email filter__item-data" id="email" type="email" name="email"
             placeholder="кuklachev@gmail.com">
-          <svg class="form-email__icon" width="30" height="22">
+          <svg class="form-email__icon svg-link-hover" width="30" height="22">
             <use xlink:href="img/sprite.svg#email"></use>
           </svg>
         </div>
         <div class="form-phone">
           <label for="phone">Телефон:*</Label>
-          <input class="user-phone filter__item-data" id="phone" type="tel" name="phone"
-            placeholder="8 (960) 900-60-90">
-          <svg class="form-phone__icon" width="30" height="22">
+          <input class="user-phone filter__item-data" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+            required>
+          <svg class="form-phone__icon svg-link-hover" width="30" height="22">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
         </div>
       </fieldset>
-      <fieldset class="filter__message">
-        <label class="user-label" for="user-message">Комментарий</label><br>
+      <fieldset class="filter__message message__title-line">
+        <label class="filter__cover user-label" for="user-message">Комментарий</label><br>
         <textarea class="user-message" id="user-message" name="text"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="filter__checkbox">
-        <legend>Дополнительно</legend>
+      <fieldset class="filter__checkbox checkbox__title-line">
+        <legend class="filter__cover">Дополнительно</legend>
         <ul class="checkbox-list">
           <li class="checkbox-list__item">
             <input class="filter-input visually-hidden" type="checkbox" name="filter-1" id="sweetener" checked>
