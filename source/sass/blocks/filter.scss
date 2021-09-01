@@ -1,0 +1,373 @@
+.filter__list {
+  border: none;
+  padding: 0;
+  max-width: 570px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 15px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filter__item {
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.item-radio {
+  margin-bottom: 25px;
+}
+
+.filter__item-data {
+  width: 100%;
+}
+
+.filter__message {
+  padding: 0;
+  border: none;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+  margin-bottom: 30px;
+}
+
+.filter__checkbox {
+  border: none;
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+}
+
+.filter__contact {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.filter__cover {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ffffff;
+  z-index: 1;
+  padding-right: 16px;
+  padding-left: 20px;
+  max-width: 220px;
+  margin-left: -20px;
+}
+
+.filter__contact legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+  margin-bottom: 37px;
+}
+
+.filter-input {
+  display: inline-block;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-left: 13px;
+  border: 1px solid #E7E7E7;
+}
+
+.filter-input:hover {
+  border: 1px solid #CDCDCD;;
+}
+
+.filter-input:focus {
+  border-radius: none;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+}
+
+.filter-input:invalid {
+  border: 2px solid $status_error;
+}
+
+.filter-list {
+  padding: 0;
+  list-style: none;
+}
+
+.filter__list-radio {
+  padding-top: 12px;
+  padding-bottom: 0;
+  margin-bottom: 25px;
+}
+
+.filter-input:disabled + .custom-radio {
+  opacity: 0.3;
+}
+
+.filter-input + .custom-radio::before {
+  position: absolute;
+  content: ' ';
+  top: -4px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #BABABA;
+}
+
+.filter-input:hover + .custom-radio::before {
+  border: 1px solid #BABABA;
+}
+
+.filter-input:focus + .custom-radio::before {
+  border: 2px solid $basic_black;
+}
+
+.filter-input:checked + .custom-radio::after {
+  position: absolute;
+  content: ' ';
+  top: 5px;
+  left: 9px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: $basic_green;
+}
+
+.filter-input:disabled + .custom-check {
+  opacity: 0.3;
+}
+
+.filter-input + .custom-check::before {
+  position: absolute;
+  content: ' ';
+  top: -4px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #CDCDCD;
+}
+
+.filter-input:hover + .custom-check::before {
+  border: 1px solid #BABABA;
+}
+
+.filter-input:focus + .custom-check::before {
+  border: 2px solid $basic_black;
+}
+
+.filter-input:checked + .custom-check::after {
+  position: absolute;
+  content: ' ';
+  top: -4px;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-image: url(../../img/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter__duty {
+  display: block;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 62px;
+  padding-top: 5px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .filter__inner {
+    margin-bottom: 77px;
+  }
+
+  .filter__contact {
+    padding-left: 40px;
+    margin-bottom: 51px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter__contact legend {
+    font-size: 36px;
+    line-height: 36px;
+    color: $basic_black;
+    margin-bottom: 76px;
+    max-width: 565px;
+  }
+
+  .filter__list {
+    padding-left: 60px;
+    border: none;
+    margin-bottom: 40px;
+    max-width: 630px;
+  }
+
+  .filter__item {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+
+  .filter__cover {
+    max-width: 400px;
+    padding-left: 20px;
+    margin-left: -20px;
+  }
+
+  .filter-input {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 8px 17px;
+  }
+
+  .filter__list-radio {
+    border: 1px solid #e7e7e7;
+    margin-left: 42px;
+    padding-left: 30px;
+    max-width: 578px;
+  }
+
+  .filter__duty {
+    margin-left: 60px;
+  }
+
+  .filter-input+.custom-radio::before {
+    position: absolute;
+    content: ' ';
+    top: -7px;
+    left: -2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+  }
+
+  .filter-input:checked+.custom-radio::after {
+    top: 3px;
+    left: 8px;
+    height: 16px;
+    width: 16px;
+  }
+
+  .filter__message {
+    padding-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .filter__checkbox {
+    padding-left: 40px;
+  }
+
+  .filter-input+.custom-check::before {
+    position: absolute;
+    content: ' ';
+    top: -6px;
+    left: -3px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .filter-input:checked+.custom-check::after {
+    position: absolute;
+    content: ' ';
+    top: -4px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-image: url(../../img/checkbox.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .filter__duty {
+    display: inline-block;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .filter__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+
+  .filter__list {
+    flex: 1 1 50%;
+    padding-left: 28px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .filter__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .filter__list-radio {
+    border: 1px solid #e7e7e7;
+    padding-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-left: 73px;
+    margin-top: 11px;
+    margin-right: -8px;
+  }
+
+  .filter-list--radio {
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter-list {
+    padding: 19px 34px 27px 8px;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .filter__contact {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .filter__duty {
+    margin-left: 80px;
+  }
+
+  .filter__message {
+    padding-left: 8px;
+  }
+
+  .filter__checkbox {
+    padding-left: 7px;
+  }
+}

@@ -1,0 +1,17 @@
+.title-line::after {
+  content: "";
+  position: absolute;
+  width: calc(100vw - 17px);
+  // width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  background: $basic_green;
+  z-index: -1;
+}
+
+.filter-contact__title-wrap {
+  position: relative;
+  display: block;
+}

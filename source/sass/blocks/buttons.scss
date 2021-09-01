@@ -22,24 +22,36 @@
 .button--product {
   grid-column: 1 /3;
   margin-bottom: 30px;
+  margin-top: 4px;
+  padding: 11px 18px;
+  font-size: 15px;
 }
 
 .button--goods {
   flex: 1 1 auto;
+  padding: 11px 18px;
+  font-size: 15px;
+  margin-top: 4px;
 }
 
 .button--form {
   border: none;
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 18px;
+  margin-bottom: 15px;
 }
 
 .button--show-all {
   color: $special_dark-grey;
   background-color: $basic_grey;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 .button--show-all:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .button--show-all:active {
@@ -50,31 +62,57 @@
 @media (min-width: $tablet-width) {
   .button--promo {
     position: absolute;
-    top: 240px;
-    left: 151px;
+    top: 283px;
+    left: 120px;
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 27px;
   }
+
   .button--form {
     display: inline-block;
     width: 280px;
     margin-bottom: 30px;
+    margin-left: 43px;
+    font-size: 20px;
+    line-height: 0px;
+    padding: 26px 10px;
+  }
+
+  .button--show-all {
+    margin-bottom: 2px;
+  }
+
+  .button--goods {
+    flex: 1 1 auto;
+    padding: 11px 18px;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button--promo {
-    top: 250px;
-    left: 82px;
+    top: 326px;
+    left: 88px;
   }
+
   .button--goods {
     font-size: 16px;
     line-height: 20px;
-    padding: 15px 96px;
+    padding: 9px 89px;
+    margin-bottom: 0;
+    margin-right: -5px;
   }
+
   .button--form {
-    width: 568px;
+    display: inline-block;
+    width: 567px;
+    margin-bottom: 30px;
+    margin-left: 9px;
+    font-size: 20px;
+    line-height: 0px;
+    padding: 26px 10px;
   }
 }
