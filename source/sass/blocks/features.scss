@@ -4,6 +4,7 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic_black;
+  margin-top: -7px;
 }
 
 .features__item {
@@ -23,35 +24,39 @@
   }
 }
 
-.features__item--nutrients::before{
+.features__item--nutrients::before {
+  top: 8px;
   background-image: url(../img/features/icon_leaf.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--powder::before {
+  top: 6px;
   background-image: url(../img/features/icon_tub.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--surrogate::before {
+  top: 4px;
   background-image: url(../img/features/icon_eat.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--enjoy::before {
+  top: 2px;
   background-image: url(../img/features/icon_alarm.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
 .features__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-bottom: 22px;
 }
 
 .features__text {
@@ -61,51 +66,124 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  padding-top: 8px;
 }
 
 @media (min-width: $tablet-width) {
+
+  .features {
+    padding-top: 10px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  .features__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 58px;
+    padding-left: 10px;
+  }
+
   .features__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
   }
+
   .features__item {
     min-height: 280px;
-    width: 230px;
+    width: 246px;
     padding-left: 0;
+    margin-bottom: 38px;
     background-repeat: no-repeat;
     background-position: top right;
     &::before {
       content: '';
       position: absolute;
-      top: 0;
+      top: 21px;
       left: 0;
       width: 80px;
       height: 80px;
       background-color: $basic_green;
     }
   }
+
   .features__text {
-    padding-top: 151px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 135px;
   }
+
   .features__item--nutrients {
     background-image: url(../../img/features/1.png);
+    background-position: 127px 25px;
   }
+
   .features__item--powder {
+    margin-left: 20px;
     background-image: url(../../img/features/2.png);
+    background-position: 127px 25px;
   }
+
+  .features__item--powder .features__text {
+    margin-left: 10px;
+  }
+
+  .features__item--powder::before {
+    left: 10px;
+  }
+
   .features__item--surrogate {
     background-image: url(../../img/features/3.png);
+    background-position: 127px 19px;
   }
+
   .features__item--enjoy {
+    margin-left: 28px;
     background-image: url(../../img/features/4.png);
+    background-position: 127px 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .features__list {
-    grid-template-columns: repeat(4, 1fr);
+
+  .features {
+    border: none;
   }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
   .features__item {
     width: 230px;
+    margin-right: 80px;
+    margin-left: 6px;
+  }
+
+  .features__item--nutrients {
+  }
+
+  .features__item--powder {
+    width: 246px;
+  }
+
+  .features__item--surrogate {
+    width: 248px;
+  }
+
+  .features__item--surrogate::before {
+    left: 3px;
+  }
+
+  .features__item--enjoy {
+    width: 250px;
+  }
+
+  .features__item--enjoy {
+    left: -9px;
   }
 }

@@ -4,17 +4,24 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
+  margin-top: 7px;
+  margin: 0;
+}
+
+.goods__wrapper {
+  padding-bottom: 37px;
+}
+
+.goods__title-wrap {
+  position: relative;
+  display: block;
   margin-bottom: 36px;
 }
 
 .goods__product {
   padding: 0;
+  margin: 0;
   list-style: none;
-}
-
-.goods__title-line {
-  position: relative;
-  display: block;
 }
 
 .goods__cover {
@@ -28,26 +35,16 @@
   margin-left: -20px;
 }
 
-.goods__title-line::after {
-  content: "";
-  position: absolute;
-  top: 35px;
-  left: 20px;
-  width: 100vw;
-  height: 3px;
-  background: $basic_green;
-  z-index: -1;
-}
-
 .goods__gift {
-  min-height: 200px;
+  margin-top: 38px;
+  min-height: 187px;
   padding: 60px 10px 43px 10px;
   background-color: $basic_green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../img/block_gift.jpg);
+  background-image: url(../img/block_gift-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #68b738;
@@ -66,12 +63,23 @@
   margin: 0;
 }
 
+.product-more {
+  border-top: 1px solid #ebebeb;
+  min-height: 112px;
+  padding-bottom: 18px;
+}
+
+.product-more:last-child {
+  border-bottom: 1px solid #CDCDCD;;
+}
+
 .product-more__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+  margin-bottom: 10px;
 }
 
 .product-more__discription {
@@ -82,7 +90,7 @@
   color: $special_dark-grey;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .goods__gift-text {
@@ -92,44 +100,93 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .goods__title {
+    margin-left: 18px;
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 380px;
+    margin-top: 0;
+  }
+
+  .goods__product {
+    margin-bottom: 72px;
+  }
+
+  .goods__wrapper {
+    padding-bottom: 80px;
+  }
+
+  .goods__title-wrap {
+    margin-bottom: 78px;
+  }
+
   .product-more {
     display: flex;
     flex-wrap: wrap;
-    max-width: 632px;
+    max-width: 708px;
+    padding: 20px 38px 4px 36px;
+    border-top: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    border-bottom: none;
+    margin-bottom: 1px;
   }
+
+  .product-more:last-child {
+    border-bottom: 1px solid #CDCDCD;;
+  }
+
   .product-more__title {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 20px;
     flex: 1 0 54%;
   }
+
   .product-more__discription {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex: 1 1 46%;
-    align-items: flex-end;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 6px;
   }
+
+  .product-more__discription-amount {
+    margin-right: 50px;
+  }
+
   .goods__gift {
     box-sizing: border-box;
-    padding-left: 78px;
+    padding: 51px 10px 43px 78px;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 632px;
+    justify-content: space-between;
+    min-height: 200px;
+    max-width: 708px;
   }
-  .goods__title-line::before {
-    content: "";
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    width: 100vw;
-    height: 3px;
-    background: $basic_green;
-    z-index: -1;
+
+  .goods__gift-text {
+    text-align: left;
+    margin: 0;
+    margin-right: 113px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
+
+  .goods__title {
+    margin-top: 12px;
+    margin-left: -12px;
+    margin-top: 0;
+  }
+
   .goods__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
   }
   .goods__gift {
     padding-left: 0;
@@ -141,21 +198,44 @@
   .product-more {
     max-width: 896px;
     flex-wrap: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    border: none;
+    min-height: 72px;
+    align-items: center;
+    padding: 0;
+    border-top: 1px solid #CDCDCD;
   }
+
   .product-more__title {
-    flex: 1 0 40%;
+    margin-top: 12px;
+    padding-left: 10px;
+    flex: 1 0 36%;
   }
+
   .product-more__discription {
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
   }
+
   .product-more__discription-cost {
-    margin-right: 20px;
+    margin-right: 40px;
   }
+
   .goods__gift {
     flex-direction: column;
-    min-height: 260px;
+    min-height: 288px;
     width: 245px;
+    margin-top: 0;
+    margin-right: -10px;
+  }
+
+  .goods__gift svg {
+    margin-top: 6px;
+  }
+
+  .goods__gift-text {
+    text-align: center;
+    margin: 0;
   }
 }
