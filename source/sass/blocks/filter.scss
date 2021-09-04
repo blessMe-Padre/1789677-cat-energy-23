@@ -50,7 +50,7 @@
   color: $basic_black;
 }
 
-.filter__contact {
+.filter-contact {
   border: none;
   padding: 0;
   margin: 0;
@@ -68,7 +68,7 @@
   margin-left: -20px;
 }
 
-.filter__contact legend {
+.filter-contact legend {
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
@@ -197,7 +197,7 @@
     margin-bottom: 77px;
   }
 
-  .filter__contact {
+  .filter-contact {
     padding-left: 40px;
     margin-bottom: 51px;
     flex-direction: column;
@@ -205,7 +205,7 @@
     margin: 0;
   }
 
-  .filter__contact legend {
+  .filter-contact legend {
     font-size: 36px;
     line-height: 36px;
     color: $basic_black;
@@ -351,7 +351,7 @@
     box-sizing: border-box;
   }
 
-  .filter__contact {
+  .filter-contact {
     margin: 0;
     display: flex;
     justify-content: space-between;

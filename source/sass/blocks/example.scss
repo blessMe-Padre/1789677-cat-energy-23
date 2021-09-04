@@ -14,7 +14,7 @@
   margin-bottom: 33px;
 }
 
-.example__stat {
+.example-stat {
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
@@ -120,7 +120,7 @@
     margin-bottom: 49px;
   }
 
-  .example__stat {
+  .example-stat {
     display: inline-flex;
     width: 52%;
   }
@@ -144,7 +144,7 @@
     background: #ffffff;
   }
 
-  .example-stat__wrapper {
+  .example-stat-wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -190,14 +190,14 @@
   .example__wrapper {
     max-width: 436px;
   }
-  .example__stat {
+  .example-stat {
     width: 84%;
   }
   .example__desc {
     display: flex;
     justify-content: space-between;
   }
-  .example-stat__wrapper {
+  .example-stat-wrapper {
     flex-direction: column;
   }
   .example-stat__item {

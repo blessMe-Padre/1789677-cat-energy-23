@@ -1,4 +1,4 @@
-.page__title-form {
+.page-title-form {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -7,7 +7,7 @@
   margin-bottom: 38px;
 }
 
-.page__text {
+.page-text {
   padding-right: 20px;
   margin-bottom: 20px;
 }
@@ -113,7 +113,7 @@
     margin-bottom: 54px;
   }
 
-  .page__text {
+  .page-text {
     font-size: 20px;
     line-height: 30px;
     padding: 0 40px;
@@ -121,7 +121,7 @@
     margin-bottom: 55px;
   }
 
-  .form__title {
+  .form-title {
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -194,11 +194,11 @@
     margin-top: 60px;
   }
 
-  .page__text {
+  .page-text {
     padding: 0 9px;
   }
 
-  .input__wrapper {
+  .input-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
