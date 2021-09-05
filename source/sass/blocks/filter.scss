@@ -96,9 +96,10 @@
   box-sizing: border-box;
 }
 
-.filter-input:invalid {
+.filter-input:not(:placeholder-shown) {
   border: 2px solid $status_error;
 }
+
 
 .filter-list {
   padding: 0;

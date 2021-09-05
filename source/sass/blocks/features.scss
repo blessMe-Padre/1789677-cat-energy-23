@@ -81,8 +81,6 @@
     font-weight: normal;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 58px;
-    padding-left: 10px;
   }
 
   .features__list {
@@ -95,13 +93,13 @@
     min-height: 280px;
     width: 246px;
     padding-left: 0;
-    margin-bottom: 38px;
+    margin-bottom: 33px;
     background-repeat: no-repeat;
     background-position: top right;
     &::before {
       content: '';
       position: absolute;
-      top: 21px;
+      top: 23px;
       left: 0;
       width: 80px;
       height: 80px;
@@ -148,9 +146,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .features {
     border: none;
+    padding-top: 34px;
   }
 
   .features__list {
@@ -161,29 +159,34 @@
   .features__item {
     width: 230px;
     margin-right: 80px;
-    margin-left: 6px;
-  }
-
-  .features__item--nutrients {
+    margin-left: 1px;
   }
 
   .features__item--powder {
     width: 246px;
   }
 
+  .features__item--powder::before {
+    left: 13px;
+  }
+
   .features__item--surrogate {
     width: 248px;
   }
 
+  .features__item--surrogate .features__text {
+    padding-left: 10px;
+  }
+
   .features__item--surrogate::before {
-    left: 3px;
+    left: 11px;
   }
 
   .features__item--enjoy {
     width: 250px;
   }
 
-  .features__item--enjoy {
-    left: -9px;
+  .features__item--enjoy::before {
+    left: 7px;
   }
 }

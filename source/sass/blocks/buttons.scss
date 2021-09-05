@@ -1,7 +1,7 @@
 .button {
   display: block;
   text-align: center;
-  padding: 14px 18px;
+  padding: 12px 18px;
   background-color: $basic_green;
   color: $basic_white;
   font-size: 14px;
@@ -62,11 +62,11 @@
 @media (min-width: $tablet-width) {
   .button--promo {
     position: absolute;
-    top: 283px;
-    left: 120px;
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
+    top: 278px;
+    left: 120px;
     padding: 17px 27px;
   }
 
@@ -94,16 +94,17 @@
 
 @media (min-width: $desktop-width) {
   .button--promo {
-    top: 326px;
-    left: 88px;
+    top: 328px;
+    left: 80px;
   }
 
   .button--goods {
     font-size: 16px;
     line-height: 20px;
-    padding: 9px 89px;
+    padding: 10px 92px;
     margin-bottom: 0;
-    margin-right: -5px;
+    margin-right: 1px;
+    margin-top: -5px;
   }
 
   .button--form {
@@ -114,5 +115,9 @@
     font-size: 20px;
     line-height: 0px;
     padding: 26px 10px;
+  }
+
+  .button--show-all {
+    margin-bottom: 7px;
   }
 }
