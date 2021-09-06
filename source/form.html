@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header main-nav--nojs">
     <div class="page-header__container">
       <div class="page-header__header">
@@ -25,7 +25,7 @@
           </picture>
         </a>
         <img class="page-header__img" src="img/site-logo.svg" width="101" height="18" alt="cat energy">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+        <button class="nav-toggle nav-toggle--open" type="button" aria-label="Открыть меню"></button>
       </div>
       <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list site-list">
@@ -38,8 +38,8 @@
     </div>
   </header>
   <main class="page-main container">
-    <h1 class="page__title-form">Подбор программы</h1>
-    <p class="page__text">Заполните анкету, и мы подберем
+    <h1 class="page-title-form">Подбор программы</h1>
+    <p class="page-text">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <div class="filter__inner">
@@ -74,11 +74,11 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="filter__contact">
+      <fieldset class="filter-contact">
         <div class="filter-contact__title-wrap title-line">
           <legend class="filter__cover">Контактные данные (владельца кота)</legend>
         </div>
-        <div class="input__wrapper">
+        <div class="input-wrapper">
           <div class="form-email">
             <label for="email">E-mail:*</Label>
             <input class="user-email filter__item-data" id="email" type="email" name="email"
@@ -88,7 +88,6 @@
             </svg>
           </div>
           <div class="form-phone">
-
             <label for="phone">Телефон:*</Label>
             <input class="user-phone filter__item-data" id="phone" type="tel" name="phone"
               placeholder="8 (960) 900-60-90" required>
@@ -98,13 +97,13 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="filter__message message__title-line">
-        <label class="filter__cover form__title user-label" for="user-message">Комментарий</label><br>
+      <fieldset class="filter__message">
+        <label class="filter__cover form-title user-label" for="user-message">Комментарий</label><br>
         <textarea class="user-message" id="user-message" name="text"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="filter__checkbox checkbox__title-line">
-        <legend class="filter__cover form__title">Дополнительно</legend>
+      <fieldset class="filter__checkbox">
+        <legend class="filter__cover form-title">Дополнительно</legend>
         <ul class="checkbox-list">
           <li class="checkbox-list__item">
             <input class="filter-input visually-hidden" type="checkbox" name="filter-1" id="sweetener" checked>
@@ -141,7 +140,7 @@
         </address>
       </div>
     </div>
-    <div class="footer__map">
+    <div class="footer-map">
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"></iframe>
     </div>

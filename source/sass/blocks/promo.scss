@@ -1,6 +1,7 @@
 .promo {
   position: relative;
   padding-top: 20px;
+  margin-bottom: 22px;
 }
 
 .promo__title {
@@ -28,6 +29,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 29px;
+  margin-bottom: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +44,7 @@
     max-width: 420px;
     text-align: left;
     padding-left: 87px;
-    margin: 26px 0 41px;
+    margin: 21px 0 41px;
   }
   .promo__slogan {
     font-size: 20px;
@@ -53,7 +55,7 @@
     margin-bottom: 50px;
   }
   .promo__img {
-    margin: -29px auto 0;
+    margin: -31px auto 0;
   }
 }
 
@@ -63,15 +65,16 @@
     margin-bottom: 94px;
   }
   .promo__title {
-    margin-top: 67px;
-    padding-left: 88px;
+    padding-top: 55px;
+    padding-left: 82px;
   }
   .promo__slogan {
-    padding-left: 88px;
+    margin-top: 0;
+    padding-left: 80px;
   }
   .promo__img {
     position: absolute;
-    top: 42px;
-    left: 456px;
+    top: 44px;
+    left: 448px;
   }
 }
