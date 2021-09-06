@@ -19,7 +19,7 @@
               media="(max-width:767px)">
             <source srcset="img/logo/logo-tablet.png 1x, img/logo/logo-tablet@2x.png 2x" type="image/png"
               media="(min-width:768px)">
-            <source srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x," type="image/png"
+            <source srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x" type="image/png"
               media="(min-width:1220px)">
             <img src="img/logo/logo-mobile.png" alt="Кэт энерджи">
           </picture>
@@ -44,18 +44,19 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <div class="filter__inner">
         <fieldset class="filter__list">
-          <ul class="filter__item">
+          <div class="filter__item">
             <label for="animal">имя:*</label>
-            <input class="filter-input filter__item-data" type="text" id="animal" placeholder="барсик" required>
-          </ul>
-          <ul class="filter__item">
+            <input class="filter-input filter__item-data" type="text" id="animal" placeholder="барсик" required
+              pattern="[а-яА-Я]+">
+          </div>
+          <div class="filter__item">
             <label for="weight">вес (кг):*</label>
             <input class="filter-input filter__item-data" type="text" id="weight" placeholder="7" required>
-          </ul>
-          <ul class="filter__item">
+          </div>
+          <div class="filter__item">
             <label for="age">возраст (лет)</label>
             <input class="filter-input filter__item-data" type="text" id="age" placeholder="7">
-          </ul>
+          </div>
         </fieldset>
         <fieldset class="filter__list filter__list-radio">
           <ul class="filter-list filter-list--radio">
@@ -75,8 +76,8 @@
         </fieldset>
       </div>
       <fieldset class="filter-contact">
-        <div class="filter-contact__title-wrap title-line">
-          <legend class="filter__cover">Контактные данные (владельца кота)</legend>
+        <div class="filter__title-wrap title-line--contact">
+          <h2 class="filter-contact__title filter__cover form-title">Контактные данные (владельца кота)</h2>
         </div>
         <div class="input-wrapper">
           <div class="form-email">
@@ -90,7 +91,7 @@
           <div class="form-phone">
             <label for="phone">Телефон:*</Label>
             <input class="user-phone filter__item-data" id="phone" type="tel" name="phone"
-              placeholder="8 (960) 900-60-90" required>
+              placeholder="8 (960) 900-60-90" required pattern="[0-9]+">
             <svg class="form-phone__icon svg-link-hover" width="20" height="20">
               <use xlink:href="img/sprite.svg#phone"></use>
             </svg>
@@ -98,12 +99,16 @@
         </div>
       </fieldset>
       <fieldset class="filter__message">
-        <label class="filter__cover form-title user-label" for="user-message">Комментарий</label><br>
+        <div class="filter__title-wrap title-line">
+          <label class="filter__cover form-title user-label" for="user-message">Комментарий</label>
+        </div>
         <textarea class="user-message" id="user-message" name="text"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="filter__checkbox">
-        <legend class="filter__cover form-title">Дополнительно</legend>
+        <div class="filter__title-wrap title-line">
+          <label class="filter__cover form-title">Дополнительно</label>
+        </div>
         <ul class="checkbox-list">
           <li class="checkbox-list__item">
             <input class="filter-input visually-hidden" type="checkbox" name="filter-1" id="sweetener" checked>

@@ -32,7 +32,7 @@
 }
 
 .example-stat__description {
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -48,7 +48,7 @@
 }
 
 .example__text {
-  font-family: Arial;
+  font-family: "Arial";
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -106,7 +106,7 @@
   }
 
   .example__text {
-    font-family: Arial;
+    font-family: "Arial";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -172,41 +172,51 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top,#f2f2f2 76.7%,#fff 30%);
+    background: linear-gradient(to top, $basic_grey 76.7%, $basic_white 30%);
     padding: 15px 0 21px 5px;
   }
+
   .example__title {
     margin-bottom: 146px;
   }
+
   .example__text {
     margin-top: 2px;
     margin-bottom: 67px;
   }
+
   .example__wrapper {
     max-width: 436px;
   }
+
   .example-stat {
     width: 84%;
   }
+
   .example__desc {
     display: flex;
     justify-content: space-between;
   }
+
   .example-stat-wrapper {
     flex-direction: column;
   }
+
   .example-stat__item {
     padding: 10px 10px 20px;
     max-width: 162px;
   }
+
   .example-stat__description {
     background: #f2f2f2;
     bottom: -1px;
   }
+
   .example-stat__number {
     font-size: 30px;
     line-height: 37px;
   }
+
   .example__price {
     display: flex;
     flex-direction: row;
@@ -215,12 +225,15 @@
     line-height: 20px;
     margin-top: 29px;
   }
+
   .example__price span {
     margin-right: 61px;
   }
+
   .example__photos-list {
     margin-top: -240px;
   }
+
   .example__photos-item img {
     margin-top: -284px;
     padding-left: 118px;

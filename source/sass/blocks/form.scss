@@ -8,8 +8,12 @@
 }
 
 .page-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .custom-radio {
@@ -40,12 +44,22 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  border: 1px solid $special_grey;
 }
 
-.user-email, .user-phone {
+.user-email,
+.user-phone {
   position: relative;
   padding: 10px 45px 10px 13px;
   margin-left: 7px;
+  border: 1px solid $special_grey;
+}
+
+.user-email:focus,
+.user-phone:focus {
+  outline: none;
+  border-radius: none;
+  border: 2px solid #444444;
 }
 
 .user-email:invalid {
@@ -63,8 +77,10 @@
 }
 
 .user-email:focus + .form-email__icon {
+  outline: none;
   stroke: $basic_green;
 }
+
 .user-phone:focus + .form-phone__icon {
   stroke: $basic_green;
 }
@@ -74,12 +90,20 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 150px;
-  padding: 16px 10px;
+  padding: 10px 10px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  margin-top: 30px;
+  margin-top: 38px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: -6px;
+}
+
+.user-message:focus {
+  outline: none;
+  border-radius: none;
+  border: 2px solid #444444;
 }
 
 .checkbox-list {
@@ -105,7 +129,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page__title-form {
+  .page-title-form {
     font-size: 60px;
     line-height: 60px;
     padding-left: 40px;
@@ -128,12 +152,6 @@
     line-height: 36px;
   }
 
-  .checkbox-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 40px;
-  }
-
   .custom-radio {
     font-size: 20px;
     line-height: 30px;
@@ -143,11 +161,13 @@
   .custom-check {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 58px;
   }
 
   .form-email,
   .form-phone {
     font-size: 20px;
+    padding-left: 42px;
     line-height: 30px;
     max-width: 630px;
   }
@@ -158,7 +178,8 @@
     line-height: 30px;
   }
 
-  .user-email, .user-phone {
+  .user-email,
+  .user-phone {
     margin-left: 15px;
     padding: 10px 45px 10px 21px;
   }
@@ -168,18 +189,20 @@
     padding: 8px 14px;
     font-size: 20px;
     line-height: 30px;
-    color: #444;
+    color: $special_dark-grey;
     margin-top: 75px;
+    margin-left: 40px;
+    max-width: 89%;
   }
+
 
   .checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 62px;
     margin-bottom: 33px;
+    margin-left: 40px;
     row-gap: 18px;
-  }
-
-  .custom-check {
-    padding-left: 58px;
   }
 
   .checkbox-list__item:nth-child(even) {
@@ -188,14 +211,14 @@
 }
 
 @media (min-width: $desktop-width) {
-
-  .page__title-form {
-    padding-left: 9px;
+  .page-title-form {
+    padding-left: 0;
     margin-top: 60px;
+    margin-bottom: 55px;
   }
 
   .page-text {
-    padding: 0 9px;
+    padding: 0;
   }
 
   .input-wrapper {
@@ -213,18 +236,27 @@
     margin-left: 40px;
   }
 
-  .form-email, .form-phone {
+  .form-email,
+  .form-phone {
     font-size: 20px;
     line-height: 30px;
     max-width: 569px;
+    padding-left: 0;
+  }
+
+  .user-email,
+  .user-phone {
+    margin-left: 18px;
+  }
+
+  .user-message {
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .checkbox-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .checkbox-list {
     margin-top: 62px;
     margin-bottom: 44px;
     row-gap: 18px;

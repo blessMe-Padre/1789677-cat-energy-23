@@ -19,6 +19,7 @@ $breakpoint-mobile-only: 767px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1220px;
 $max-screen-width: 1300px;
+
 @mixin mobile-only {
   @media (max-width: $breakpoint-mobile-only) {
     @content;
@@ -46,7 +47,7 @@ $thumb-radius: 50%;
 $thumb-height: 32px;
 $thumb-width: 32px;
 $thumb-border-width: 12px;
-$thumb-border-color: white;
+$thumb-border-color: $basic_white;
 
 $track-width: 428px;
 $track-height: 6px;
@@ -58,7 +59,6 @@ $track-radius: 3px;
   width: $track-width;
   height: $track-height;
   cursor: pointer;
-  animate: 0.2s;
 }
 
 @mixin thumb() {
@@ -70,8 +70,6 @@ $track-radius: 3px;
   background: $thumb-color;
   cursor: pointer;
   box-sizing: border-box;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -86,6 +84,7 @@ $track-radius: 3px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+
   &:focus {
     outline: none;
   }
@@ -161,6 +160,7 @@ $track-radius: 3px;
 .slider__pictures {
   max-width: 800px;
 }
+
 .slider__button {
   width: 50px;
   border: none;

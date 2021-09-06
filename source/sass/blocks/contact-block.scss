@@ -12,7 +12,7 @@
 }
 
 .contact-block__address {
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -41,13 +41,13 @@
     margin-top: 12px;
     padding-right: 42px;
     text-align: right;
-    font-family: Arial;
+    font-family: "Arial";
     font-size: 16px;
     line-height: 20px;
   }
 
   .contact-block--bg {
-    background: #F2F2F2;
+    background: $basic_grey;
   }
 
   .contact-block__invite,
@@ -75,7 +75,7 @@
     left: 9px;
     width: 570px;
     height: 201px;
-    background-color: #fff;
+    background-color: $basic_white;
     justify-content: space-between;
     padding: 44px;
   }
@@ -85,7 +85,7 @@
   }
 
   .contact-block__address {
-    font-family: Arial;
+    font-family: "Arial";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
