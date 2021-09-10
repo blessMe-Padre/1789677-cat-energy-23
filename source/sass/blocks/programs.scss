@@ -31,7 +31,7 @@
 }
 
 .programs-card__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -70,7 +70,7 @@
   transition: all 0.5s ease;
 }
 
-.programs-card__link:hover:after {
+.programs-card__link:hover::after {
   right: -22px;
 }
 
@@ -94,7 +94,6 @@
     padding-left: 49px;
     padding-top: 76px;
     margin-bottom: 26px;
-
   }
 
   .programs-card__img {
@@ -136,7 +135,7 @@
     right: -41px;
   }
 
-  .programs-card__link:hover:after {
+  .programs-card__link:hover::after {
     right: -56px;
   }
 
@@ -159,6 +158,7 @@
     max-width: 570px;
     box-sizing: border-box;
     padding-top: 37px;
+
     &:not(:nth-child(even)) {
       margin-right: 80px;
     }

@@ -69,7 +69,7 @@
 }
 
 .product-by__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -135,7 +135,7 @@
 
   .product-by__text {
     margin-right: 20px;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -146,6 +146,11 @@
 @media (min-width: $desktop-width) {
   .footer-social {
     margin-top: 29px;
+  }
+
+  .footer-social__icon {
+    padding: 14px;
+    margin-right: -4px;
   }
 
   .footer-social__list {

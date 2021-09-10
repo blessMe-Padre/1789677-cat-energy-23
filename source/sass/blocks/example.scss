@@ -32,7 +32,7 @@
 }
 
 .example-stat__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -48,7 +48,7 @@
 }
 
 .example__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -106,7 +106,7 @@
   }
 
   .example__text {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -144,7 +144,6 @@
   }
 
   .example__price {
-    margin-top: -20px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
@@ -172,7 +171,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top, $basic_grey 76.7%, $basic_white 30%);
+    // background: linear-gradient(to top, $basic_grey 76.7%, $basic_white 30%);
+    background: linear-gradient(to bottom, $basic_white 155px, $basic_grey 90px);
     padding: 15px 0 21px 5px;
   }
 
