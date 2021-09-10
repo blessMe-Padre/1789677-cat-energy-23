@@ -1,0 +1,39 @@
+.custom-radio {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+.custom-radio__label {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .custom-radio {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-radio__label {
+    top: 47%;
+    left: -3px;
+    height: 40px;
+    width: 40px;
+  }
+}

@@ -1,0 +1,18 @@
+.custom-check {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_black;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .custom-check {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 58px;
+  }
+}
