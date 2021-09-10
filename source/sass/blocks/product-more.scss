@@ -5,7 +5,7 @@
 }
 
 .product-more:last-child {
-  border-bottom: 1px solid #CDCDCD;;
+  border-bottom: 1px solid $special_grey;
 }
 
 .product-more__title {
@@ -18,7 +18,7 @@
 }
 
 .product-more__discription {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
@@ -34,15 +34,15 @@
     flex-wrap: wrap;
     max-width: 708px;
     padding: 20px 38px 4px 36px;
-    border-top: 1px solid #CDCDCD;
-    border-left: 1px solid #CDCDCD;
-    border-right: 1px solid #CDCDCD;
+    border-top: 1px solid $special_grey;
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
     border-bottom: none;
     margin-bottom: 1px;
   }
 
   .product-more:last-child {
-    border-bottom: 1px solid #CDCDCD;;
+    border-bottom: 1px solid $special_grey;
   }
 
   .product-more__title {
@@ -76,7 +76,7 @@
     min-height: 70px;
     align-items: center;
     padding: 0;
-    border-top: 1px solid #CDCDCD;
+    border-top: 1px solid $special_grey;
   }
 
   .product-more__title {
