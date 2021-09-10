@@ -12,7 +12,7 @@
 }
 
 .contact-block__address {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -21,7 +21,11 @@
   padding: 16px 0 16px 13px;
 }
 
-.contact-block__address p {
+.contact-block__street {
+  margin: 0;
+}
+
+.contact-city {
   margin: 0;
 }
 
@@ -41,57 +45,63 @@
     margin-top: 12px;
     padding-right: 42px;
     text-align: right;
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
   }
 
   .contact-block--bg {
-    background: #F2F2F2;
+    background: $basic_grey;
   }
 
   .contact-block__invite,
   .contact-block__address {
     max-width: 170px;
   }
-
-  .contact-block__address p {
-    margin-bottom: 20px;
-  }
 }
-
 
 @media (min-width: $desktop-width) {
   .contact-container {
     position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-container__wrap {
     width: 1220px;
     margin: 0 auto;
   }
 
   .contact-block {
-    position: absolute;
     box-sizing: border-box;
-    top: 97px;
-    left: 9px;
     width: 570px;
     height: 201px;
-    background-color: #fff;
+    background-color: $basic_white;
     justify-content: space-between;
-    padding: 44px;
+    padding: 65px 73px 50px 77px;
+    z-index: 1;
+    position: relative;
+    max-width: 1220px;
   }
 
   .contact-block__invite {
-    padding: 2px 0 10px 24px;
+    margin: 0;
+    padding: 0;
   }
 
   .contact-block__address {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 3px;
-    padding-right: 37px;
     text-align: left;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .contact-block__street {
+    margin-bottom: 20px;
   }
 }

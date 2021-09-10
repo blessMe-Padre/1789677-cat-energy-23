@@ -1,0 +1,49 @@
+.filter-contact {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.filter-contact__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-contact {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  .filter-contact__title {
+    font-size: 36px;
+    line-height: 36px;
+    color: $basic_black;
+    max-width: 595px;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-contact {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 49px;
+  }
+
+  .filter-contact__title {
+    margin-bottom: 77px;
+  }
+}

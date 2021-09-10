@@ -1,0 +1,41 @@
+.user-message {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px 10px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-top: 38px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: -6px;
+}
+
+.user-message:focus {
+  outline: none;
+  border-radius: none;
+  border: 1px solid $special_dark-grey;
+  box-shadow: 0 0 0 1px $special_dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .user-message {
+    min-height: 173px;
+    padding: 8px 14px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $special_dark-grey;
+    margin-top: 75px;
+    margin-left: 40px;
+    max-width: 89%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-message {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}

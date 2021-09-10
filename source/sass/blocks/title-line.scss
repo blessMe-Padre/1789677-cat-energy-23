@@ -1,0 +1,46 @@
+.title-line::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  background: $basic_green;
+  z-index: -1;
+}
+
+.title-line--contact::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  background: $basic_green;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .title-line--contact::after {
+    top: 65%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .title-line::after,
+  .title-line--contact::after {
+    width: calc(100vw - 10px);
+    margin-left: -8px;
+  }
+
+  .title-line--contact::after {
+    top: 20%;
+  }
+
+  .title-line::after {
+    top: 65%;
+  }
+}

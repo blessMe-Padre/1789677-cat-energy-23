@@ -1,0 +1,26 @@
+.page-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 10px 41px 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 48px 0 41px 28px;
+    border: none;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    padding: 60px 0 41px 2px;
+  }
+}

@@ -13,8 +13,9 @@
   padding-left: 80px;
   margin-bottom: 20px;
   min-height: 60px;
+
   &::before {
-    content: '';
+    content: " ";
     position: absolute;
     top: 0;
     left: 0;
@@ -26,28 +27,28 @@
 
 .features__item--nutrients::before {
   top: 8px;
-  background-image: url(../img/features/icon_leaf.svg);
+  background-image: url("../img/features/icon_leaf.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--powder::before {
   top: 6px;
-  background-image: url(../img/features/icon_tub.svg);
+  background-image: url("../img/features/icon_tub.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--surrogate::before {
   top: 4px;
-  background-image: url(../img/features/icon_eat.svg);
+  background-image: url("../img/features/icon_eat.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features__item--enjoy::before {
   top: 2px;
-  background-image: url(../img/features/icon_alarm.svg);
+  background-image: url("../img/features/icon_alarm.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -60,7 +61,7 @@
 }
 
 .features__text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -70,10 +71,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .features {
     padding-top: 10px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid $basic_grey-4;
   }
 
   .features__title {
@@ -96,8 +96,9 @@
     margin-bottom: 33px;
     background-repeat: no-repeat;
     background-position: top right;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 23px;
       left: 0;
@@ -115,13 +116,13 @@
   }
 
   .features__item--nutrients {
-    background-image: url(../../img/features/1.png);
+    background-image: url("../img/features/1.png");
     background-position: 127px 25px;
   }
 
   .features__item--powder {
     margin-left: 20px;
-    background-image: url(../../img/features/2.png);
+    background-image: url("../img/features/2.png");
     background-position: 127px 25px;
   }
 
@@ -134,13 +135,13 @@
   }
 
   .features__item--surrogate {
-    background-image: url(../../img/features/3.png);
+    background-image: url("../img/features/3.png");
     background-position: 127px 19px;
   }
 
   .features__item--enjoy {
     margin-left: 28px;
-    background-image: url(../../img/features/4.png);
+    background-image: url("../img/features/4.png");
     background-position: 127px 24px;
   }
 }
@@ -153,7 +154,7 @@
 
   .features__list {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .features__item {
