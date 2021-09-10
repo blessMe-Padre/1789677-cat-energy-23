@@ -53,10 +53,6 @@
   margin-bottom: 15px;
 }
 
-.product-card__description-about p {
-  margin: 0;
-}
-
 .product-card__description-text {
   margin: 0;
 }
@@ -74,6 +70,7 @@
   line-height: 16px;
   color: $special_dark-grey;
   text-align: center;
+  margin: 0;
 }
 
 .about-product-text--more {

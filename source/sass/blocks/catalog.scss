@@ -1,14 +1,3 @@
-.page-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-  padding: 27px 10px 41px 18px;
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 1px solid #ebebeb;
-}
-
 .catalog__list {
   list-style: none;
   padding: 0;
@@ -34,14 +23,6 @@
     padding-top: 20px;
   }
 
-  .page-title {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 48px 0 41px 28px;
-    border: none;
-    margin-bottom: 13px;
-  }
-
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
@@ -59,10 +40,6 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding-top: 31px;
-  }
-
-  .page-title {
-    padding: 60px 0 41px 2px;
   }
 
   .catalog__list {
