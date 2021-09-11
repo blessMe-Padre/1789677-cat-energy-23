@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Подбор программы</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -78,9 +80,9 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="filter-contact">
+      <fieldset class="filter__contact">
         <div class="filter__title-wrap title-line--contact">
-          <h2 class="filter-contact__title filter__cover form-title">Контактные данные (владельца кота)</h2>
+          <h2 class="filter__contact-title filter__cover form-title">Контактные данные (владельца кота)</h2>
         </div>
         <div class="input-wrapper">
           <div class="form-email">
@@ -161,21 +163,21 @@
       </a>
       <ul class="footer-social__list">
         <li class="footer-social__icon footer-social__icon--vkontakte">
-          <a href="#">
+          <a href="#" aria-label="вконтакте">
             <svg width="23" height="16">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__icon footer-social__icon--instagram">
-          <a href="#">
+          <a href="#" aria-label="инстаграм">
             <svg width="16" height="16">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__icon footer-social__icon--facebook">
-          <a href="#">
+          <a href="#" aria-label="фейсбук">
             <svg width="22" height="22">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#facebook"></use>
             </svg>
