@@ -91,6 +91,11 @@
     left: inherit;
     background-image: url("../img/promo/promo-bg-desktop.png");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/promo-bg-desktop@2x.png");
+      background-size: cover;
+    }
   }
 
   .page-header__container {
