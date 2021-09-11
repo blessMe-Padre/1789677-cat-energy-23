@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -57,7 +59,7 @@
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="programs__list">
         <li class="programs__card programs-card">
-          <div class="programs-card__img programs-card--slim">
+          <div class="programs-card__img programs-card__img--slim">
             <img src="img/programs/cat_back.svg" width="50" height="53" alt="кот">
           </div>
           <h3 class="programs-card__title">похудение</h3>
@@ -67,7 +69,7 @@
           <a href="form.html" class="programs-card__link">каталог slim</a>
         </li>
         <li class="programs__card programs-card ">
-          <div class="programs-card__img programs-card--fat">
+          <div class="programs-card__img programs-card__img--fat">
             <img src="img/programs/cat_back-2.svg" width="67" height="50" alt="кот">
           </div>
           <h3 class="programs-card__title">набор массы</h3>
@@ -153,7 +155,8 @@
             <div class="slider__pictures">
               <div class="slider__toggle">
                 <button class="slider__button slider__button--before">Было</button>
-                <input id="slider" class="slider__range range" type="range" min="0" max="100" value="50" />
+                <input id="slider" class="slider__range range" type="range" min="0" max="100" value="50"
+                  aria-label="  переключения слайдера" />
                 <input type="checkbox" class="slider__checkbox" id='slider-checkbox'>
                 <label class="slider__checkbox-label" for="slider-checkbox">Переключение слайдера</label>
                 <button class="slider__button slider__button--after">Стало</button>
@@ -190,21 +193,21 @@
       </a>
       <ul class="footer-social__list">
         <li class="footer-social__icon footer-social__icon--vkontakte">
-          <a href="#">
+          <a href="#" aria-label="вконтакте">
             <svg width="23" height="16">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__icon footer-social__icon--instagram">
-          <a href="#">
+          <a href="#" aria-label="инстаграм">
             <svg width="16" height="16">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__icon footer-social__icon--facebook">
-          <a href="#">
+          <a href="#" aria-label="фейсбук">
             <svg width="22" height="22">
               <use class="svg-link-hover" xlink:href="img/sprite.svg#facebook"></use>
             </svg>

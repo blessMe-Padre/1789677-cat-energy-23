@@ -47,10 +47,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/block_gift-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
 .goods__gift-text {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;

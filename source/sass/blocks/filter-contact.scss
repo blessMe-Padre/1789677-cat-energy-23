@@ -1,11 +1,11 @@
-.filter-contact {
+.filter__contact {
   border: none;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
 }
 
-.filter-contact__title {
+.filter__contact-title {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -16,14 +16,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .filter-contact {
+  .filter__contact {
     flex-direction: column;
     padding: 0;
     margin: 0;
     margin-bottom: 52px;
   }
 
-  .filter-contact__title {
+  .filter__contact-title {
     font-size: 36px;
     line-height: 36px;
     color: $basic_black;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter-contact {
+  .filter__contact {
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@
     margin-bottom: 49px;
   }
 
-  .filter-contact__title {
+  .filter__contact-title {
     margin-bottom: 77px;
   }
 }

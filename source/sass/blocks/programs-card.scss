@@ -1,4 +1,4 @@
-.programs-card--fat {
+.programs-card__img--fat {
   position: relative;
   top: 5px;
   left: -7px;
@@ -15,7 +15,7 @@
 }
 
 .programs-card__text {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -119,13 +119,13 @@
     right: -56px;
   }
 
-  .programs-card--slim img {
+  .programs-card__img--slim img {
     margin-left: 15px;
     width: 200px;
     height: 211px;
   }
 
-  .programs-card--fat img {
+  .programs-card__img--fat img {
     margin-top: 11px;
     margin-left: 29px;
     width: 268px;
@@ -152,12 +152,12 @@
     height: 106px;
   }
 
-  .programs-card--slim img {
+  .programs-card__img--slim img {
     margin-top: 4px;
     margin-left: 3px;
   }
 
-  .programs-card--fat img {
+  .programs-card__img--fat img {
     margin-top: 9px;
     margin-left: -9px;
     width: 134px;
