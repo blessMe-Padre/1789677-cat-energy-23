@@ -28,7 +28,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .title-line::after,
   .title-line--contact::after {
@@ -36,11 +35,11 @@
     margin-left: -8px;
   }
 
-  .title-line--contact::after {
-    top: 20%;
-  }
-
   .title-line::after {
     top: 65%;
+  }
+
+  .title-line--contact::after {
+    top: 20%;
   }
 }
